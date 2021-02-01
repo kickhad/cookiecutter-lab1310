@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{heuristica}
+\usepackage[heuristica,vvarbb,bigdelims]{newtxmath}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\textosf{#1}}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+
+
+	
+
+
+\begin{document}
+\include{title.tex}
+
+
+\pagebreak
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+                                                       
+\section*{Problem 1}                                                     
+\subsection*{Deliverable }
+\subsubsection*{}
+\lstinputlisting{../func.m}
+
+
+% \begin{figure}
+%   \includegraphics[width=\linewidth]{func3.jpg}
+%   \caption{Analytical 3}
+%   \label{fig:func3}
+% \end{figure}
+
+\end{document}
