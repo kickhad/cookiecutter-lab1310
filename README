@@ -1,0 +1,27 @@
+Prerequiites:
+
+    * Python 3.6+ for cookiecutter
+        pip install cookiecutter
+    * TeX installation to build *.tex
+        TexLive, MikTex
+
+Usage:
+    cookiecutter https://github.com/kickhad/cookiecutter-lab1310
+
+    Title Page
+    ./tex/title.tex 
+
+    Report
+    ./tex/report.tex
+
+    Use \lstinputlisting{../func1.m} to typeset the code from func1.m.
+    
+
+TODO:
+    * Tex installation guide
+    * VS Code guide
+    * Basic Tex Instrucions
+
+
+
+

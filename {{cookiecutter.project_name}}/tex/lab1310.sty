@@ -1,0 +1,45 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{lab1310}[2013/01/13 Custom Package]
+
+\RequirePackage{amsfonts, amsmath, amsthm, amssymb}
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\RequirePackage[letterpaper, margin=1in]{geometry}
+\RequirePackage{heuristica}
+\RequirePackage[heuristica,vvarbb,bigdelims]{newtxmath}
+\RequirePackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{\textosf{#1}}
+\RequirePackage{listings}
+\RequirePackage{enumitem}
+\RequirePackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+\newcommand{\header}[2]{\section*{{#1}}{#2}}
+\newcommand{\subheader}[2]{\subsection*{{#1}}{#2}}
+\newcommand{\myscript}[2]{\subsubsection*{{#1}}\lstinputlisting{#2}}
+\newcommand{\normaltext}[2]{\subsubsection*{{#1}}{#2}}
+\newcommand{\matheqn}[1]{\begin{equation}{#1}\end{equation}}  
+\newcommand{\myfigure}[3]{
+    \begin{figure}
+        \includegraphics[width=\linewidth]{{#1}}
+        \caption{{#2}}
+        \label{{#3}}
+      \end{figure}
+    }
+\endinput
