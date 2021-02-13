@@ -2,7 +2,7 @@
     "project_name" : "Project Name",
     "project_decription":"Lab",
     "lab_number": "1",
-    "script_name":"func1.m",
+    "file_name":"func1.m",
     "author":"Jane Doe",
     "lab_section":"1310-L1",
     "student_number": "0"
